@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/detailView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp"
+        app:strokeColor="@color/borderColor"
+        app:strokeWidth="0.5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_pickup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/orderpickupnumber"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@id/guidelinedivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_detailusername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/detailusername"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/guidelinedivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_pickup" />
+
+            <TextView
+                android:id="@+id/tv_detailuserphone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/detailuserphone"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/guidelinedivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detailusername" />
+
+            <TextView
+                android:id="@+id/tv_detailuseraddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/detailuseradderess"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/guidelinedivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detailuserphone" />
+
+            <TextView
+                android:id="@+id/tv_detailuseraddressline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/detailuseradderssline"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/guidelinedivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detailuseraddress" />
+
+
+            <ImageView
+                android:id="@+id/dialIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_call"
+                app:layout_constraintTop_toTopOf="@id/tv_detailusername"
+                app:layout_constraintStart_toEndOf="@id/guidelinedivider"
+                app:layout_constraintLeft_toRightOf="@id/tv_detailuseraddressline"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_location"
+                app:layout_constraintTop_toTopOf="@id/tv_detailuseraddressline"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detailuseraddressline"
+                app:layout_constraintStart_toEndOf="@id/guidelinedivider"
+                app:layout_constraintLeft_toRightOf="@id/tv_detailuseraddressline"/>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinedivider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.80" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <Spinner
+        android:id="@+id/spstatus"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="Status"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:textColor="@android:color/transparent"
+        android:background="@drawable/rectanglebgbox"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/detailView"/>
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="18dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/spstatus"
+        app:layout_constraintTop_toTopOf="@+id/spstatus"
+        app:layout_constraintBottom_toBottomOf="@+id/spstatus"
+/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

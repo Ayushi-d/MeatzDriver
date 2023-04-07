@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">meatzDriverAndroid</string>
+    <string name="login_email">Email</string>
+    <string name="logininputemail">abc@gmail.com</string>
+    <string name="login_password">Password</string>
+    <string name="ABCD">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ordernumber">Order #125433</string>
+    <string name="orderdate">13 March 2023</string>
+    <string name="orderprice">120.000 kWD</string>
+    <string name="orderstatus">Confirmed</string>
+    <string name="orderpickupnumber">Pick Up # 1</string>
+    <string name="detailusername">Lofat</string>
+    <string name="detailuserphone">+96564328754</string>
+    <string name="detailuseradderess">AlFarwaniya, Abraq Khaitan</string>
+    <string name="detailuseradderssline">Block 4,Lbn Khaleodon Stress, Stress 33,Shop 12</string>
+    <string name="destinationText">Destination #2</string>
+
+    <string-array name="Status">
+        <item>Status</item>
+        <item>Pick Up</item>
+        <item>Delivered</item>
+    </string-array>
+</resources>
